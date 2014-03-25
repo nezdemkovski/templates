@@ -1,0 +1,558 @@
+/* 
+Peyote by Yuri Yakovlev (http://yakovlevyuri.com)
+March 2014
+
+Contents
+Chapter 1. Basic styles.................. 22
+Chapter 2. Header........................ 99
+Chapter 3. Slider........................ 148
+Chapter 4. Services...................... 196
+Chapter 5. Portfolio..................... 229
+Chapter 6. The team...................... 286
+Chapter 7. Blog.......................... 333
+Chapter 8. Contact....................... 391
+Chapter 9. Footer........................ 542
+
+Let me tell you a story...
+
+*/
+
+
+/* ***************************************** */
+/*             1. Basic styles               */
+/* ***************************************** */
+
+html, body { 
+    margin:0;
+    padding:0;
+    font-family:'Open Sans', sans-serif;
+    text-rendering:optimizeLegibility;
+    background-color:#ffffff;
+    min-width:1020px;
+}
+p, a, h1, h2, h3, h4 {
+    margin:0;
+    padding:0;
+}
+p {
+    font-size:15px;
+    color:#707070;
+    margin-bottom:10px;
+}
+a {
+    color:#474E5D;
+}
+a:hover {
+    color:#d45c31;   
+}
+h1 {
+    color:#474E5D;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:50px;
+    text-transform:uppercase;    
+}
+h2 {
+    color:#474E5D;
+    font-size:19px;
+    text-transform:uppercase;
+    margin-bottom:30px;
+}
+ul {    
+    margin:0;
+    padding:0;
+}
+li {
+    list-style:none;
+}
+.layout-center-wrapper {
+    margin:0 auto;
+    width:1020px;
+    padding:0;
+}
+.button {
+    height:41px;
+    display:inline-block;
+    cursor:pointer;
+    padding:0 10px 0 10px;
+    text-align:center;
+    line-height:40px;
+	background:transparent;
+	font-size:14px;
+    font-weight:700;
+    color:#eaeaea;
+    text-transform:uppercase;
+    border:2px solid #F39C11;   
+}
+.button:hover {
+    background:#F39C11;
+    color:#fff;
+}
+/* Input placeholder color */
+*:-moz-placeholder { color:#c7c7c7; } /* Mozilla Firefox 4 to 18 */ 
+*::-moz-placeholder { color:#c7c7c7; } /* Mozilla Firefox 19+ */
+*:-ms-input-placeholder { color:#c7c7c7; } /* Internet Explorer 10+ */
+*::-webkit-input-placeholder { color:#c7c7c7; } /* WebKit browsers */
+
+
+/* ***************************************** */
+/*                2. Header                  */
+/* ***************************************** */
+
+header {
+    padding:34px 0 34px 0;
+    background:url("../img/background/background-1.png");
+}
+header:after {
+    content:'';
+    display:table;
+    clear:both;
+}
+header .logo {
+    float:left;
+	width:135px;
+	height:20px;
+	background:url(../img/logo.png) no-repeat;
+}
+
+/* Navigation menu */
+header ul {
+	padding:0px 0 10 0;
+    float:right;
+}
+header ul li {
+	float:left;
+	font-size:14px;
+	font-weight:700;
+	color:#494e62;
+	text-transform:uppercase;
+}
+header ul li:first-child a {
+	margin-left:0px;
+}
+header ul li:last-child a {
+	margin-right:0px;
+}
+header ul li a {
+    text-decoration:none;
+	color:#ffffff;
+	display:inline-block;
+	margin:0 13px 0 13px;
+}
+header ul li a:hover {
+	color:#d45c31;
+}
+
+
+/* ***************************************** */
+/*               3. Slider                   */
+/* ***************************************** */
+
+.slider {
+    padding:60px 0 90px 0;
+    background:url("../img/background/background-2.png");
+}
+.slider ul li {
+    width:650px;
+    max-height:500px;
+    margin:0 auto;
+    text-align:center;
+}
+.slider ul li p,
+.slider ul li h1 {
+    color:#eaeaea;  
+    margin-bottom:25px; 
+}
+.slider ul .slide-1 img {
+     margin:0 auto 0 auto;
+}
+.slider ul .slide-1 .slider-button {
+    width:120px;
+    margin-right:20px;
+    margin-bottom:30px;
+}
+.slider ul .slide-1 div:nth-of-type(2) {
+    margin-right:1110px; 
+    border-color:#000;
+}
+.slider ul .slide-2 img {
+    float:left;
+    width:300px;
+    height:380px;
+}
+.slider ul .slide-2 .slide-2-text {
+    float:right;
+    width:300px;   
+    text-align:left;
+}
+.slider ul slide-2:after {
+    content:'';
+    display:table;
+    clear:both;
+}
+
+
+/* ***************************************** */
+/*               4. Services                 */
+/* ***************************************** */
+#services {
+    padding:60px 0 90px 0;
+    background-color:#F7F7F7;
+}
+#services ul {
+    padding-top:50px;
+    font-size:0;
+}
+#services ul li {
+    display:inline-block;
+    text-align:center;
+    vertical-align:top;
+    width:308px;
+    margin-right:48px;
+    margin-bottom:20px;
+}
+#services ul li:nth-child(3n) {
+    margin-right:0;   
+}
+#services ul li img {
+    margin-bottom:20px;
+}
+#services ul li h2 {
+    margin-bottom:10px;   
+}
+#services ul li:hover span {
+	color:#eb5055;
+}
+
+
+/* ***************************************** */
+/*               5. Portfolio                */
+/* ***************************************** */
+
+#portfolio {
+    padding:60px 0 90px 0;
+}
+
+/* Portfolio menu */
+#portfolio ul.portfolio-menu {
+	width:100%;
+	overflow: hidden;
+}
+#portfolio ul.portfolio-menu li {
+	float:left;
+	display:inline;
+	margin:0 10px 0 0;
+	font-size:15px;
+	font-weight:300;
+}
+#portfolio ul.portfolio-menu li a {
+    background-color:#D9D9D9;
+    text-decoration:none;
+	color:#fff;
+	padding:4px 7px;
+	display:block;
+}
+#portfolio ul.portfolio-menu li a:hover,
+#portfolio ul.portfolio-menu li.current a {
+    background-color:#F39C11;
+	color:#fff;
+}
+
+/* Portfolio blocks */
+#portfolio ul.portfolio {
+	padding-top:19px;
+    font-size:0;
+}
+#portfolio ul.portfolio li {
+	display:inline-block;
+    vertical-align:top;
+    width:216px;
+	margin:0 52px 35px 0;    
+}
+#portfolio ul.portfolio li:nth-child(4n) {
+    margin-right:0px;
+}
+#portfolio ul.portfolio img {
+    width:216px;
+    height:216px;
+}
+#portfolio ul.portfolio li p {
+    padding-top:5px;
+    text-align:center;
+}
+
+
+/* ***************************************** */
+/*               6. The team                 */
+/* ***************************************** */
+
+#the-team {
+    padding:60px 0 90px 0;
+    background-color:#F7F7F7;
+}
+#the-team ul li {
+    display:inline-block;
+    vertical-align:top;
+    width:300px;
+    margin-right:60px;
+}
+#the-team ul li:last-child {
+    margin:0;   
+}
+#the-team ul {
+    font-size:0;
+}
+#the-team ul li img {
+    margin-bottom:20px;
+    width:300px;
+    height:300px;  
+}
+#the-team ul li h2 {
+    text-align:center;
+    margin-bottom:0px;
+}
+#the-team ul li p:nth-of-type(1) {
+    text-align:center;
+    margin-top:0;
+    margin-bottom:10px;
+    font-size:14px;
+}
+#the-team ul li hr {
+    width:30px;
+    height:5px;
+    background-color:#F39C11;
+    border:none;
+}
+#the-team ul li p {
+    text-align:center;
+    margin-top:20px;
+}
+
+
+/* ***************************************** */
+/*                 7. Blog                   */
+/* ***************************************** */
+
+#blog {
+    padding:60px 0 90px 0;
+}
+#blog ul {
+    font-size:0;
+}
+#blog ul li {
+    position:relative;
+    display:inline-block;
+    vertical-align:top;
+    width:485px;
+    height:450px;
+    margin-right:50px;
+}
+#blog ul li:last-child {
+    margin-right:0;    
+}
+#blog img.blog-thumbnail {
+    position:relative;
+    width:485px;
+    height:272px;
+    background-color:#000;
+    z-index:0;
+}
+#blog ul li .blog-text {
+    position:absolute;
+    top:212px;
+    right:0;
+    width:385px;
+    height:215px;
+    padding:20px;
+    background-color:#fff;
+    z-index:100;   
+}
+#blog ul li h2 {
+    margin-bottom:15px;
+    position:relative;
+}
+#blog ul li h2:hover {
+    color:#F39C11;
+}
+#blog ul li .blog-text .blog-button {
+    position:absolute;
+    bottom:20px;
+    display:block;
+    width:140px;
+    color:#5C5C5C;
+}
+#blog ul li .blog-text .blog-button:hover {
+    color:#fff;
+}
+
+/* Oh, you should be hungry after reading all this stuff. Here, I have a cookie, take it. */
+
+/* ***************************************** */
+/*                8. Contact                 */
+/* ***************************************** */
+
+#contact {
+    padding:60px 0 90px 0;
+    background:url("../img/background/background-2.png");
+    background-color:#2D241B;
+}
+#contact:after {
+    content:'';
+    display:table;
+    clear:both;
+}
+#contact h1,
+#contact h2,
+#contact h3,
+#contact h4 {
+	color:#F6F6F6;;
+}
+#contact p {
+    color:#eaeaea;
+}
+
+/* Contact form */
+#contact .contact-form {
+    float:left;
+    margin-right:50px;
+}
+#contact .contact-form input,
+#contact .contact-form textarea {
+ 	width:520px; 
+	border:0;
+	font-size:15px;
+    outline:none;
+	font-size:15px;
+	color:#F6F6F6;
+    background:transparent;
+    border:2px solid #eaeaea;
+    font-family:'Open Sans', sans-serif;
+}
+#contact .contact-form input {
+	height:41px;
+	line-height:38px;
+	padding:0px 15px;
+	margin-bottom:10px;
+}
+#contact .contact-form textarea {
+	height:160px;
+    max-width:550px;
+	max-height:202px;
+	padding:15px;
+	margin-bottom:20px;
+	resize:none;
+}
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+    border:2px solid #F39C11;   
+}
+#contact .contact-form input[type="submit"] {
+ 	width:140px;
+	height:41px;
+	background:transparent;
+	text-align:center;
+	font-size:14px;
+    font-weight:700;
+	cursor:pointer;
+    color:#eaeaea;
+    text-transform:uppercase;
+    border:2px solid #F39C11;
+}
+#contact .contact-form input[type="submit"]:hover {
+    background:#F39C11;
+    color:#fff;
+}
+
+/* Contact info */
+#contact .contact-info {
+    float:right;
+    width:410px;
+    color:#F2F2F2;  
+}
+#contact .contact-info > p {
+    margin-top:-7px;
+    margin-bottom:30px;
+}
+#contact .contact-info .info p {
+    position:relative;
+    padding-left:40px;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+#contact .contact-info .info p.location:before {
+    content:"";
+    background:url(../img/sprite.png) no-repeat -90px -111px;
+    display:inline-block;
+    width:19px;
+    height:27px;
+    position:absolute;
+    top:-4px;
+    left:5px;
+}
+#contact .contact-info .info .tel:before {
+    content:"";
+    background:url(../img/sprite.png) no-repeat -185px -111px;
+    width:26px;
+    height:25px;
+    position:absolute;
+    top:-4px;
+    left:5px;
+}
+#contact .contact-info .info p.email:before {
+    content:"";
+    background:url(../img/sprite.png) no-repeat 0 -111px;
+    width:24px;
+    height:20px;
+    position:absolute;
+    top:0px;
+    left:5px;
+}
+#contact .contact-info .info p:last-child {
+    margin-bottom:40px;
+}
+
+/* Social links */
+#contact .contact-info .socialLinks a {
+    display:inline-block;
+    border:2px solid #EAEAEA;
+    margin-right:5px; 
+    width:45px;
+    height:45px; 
+    background:url(../img/sprite.png) no-repeat 0 0;
+}
+#contact .contact-info .socialLinks a:hover {
+    border-color:#F39C11;
+    background-color:#F39C11;
+}
+#contact .contact-info .socialLinks a.fb {
+    background-position:-72px 9px;
+}
+#contact .contact-info .socialLinks a.tw {
+    background-position:-215px 11px;
+}
+#contact .contact-info .socialLinks a.gplus {
+    background-position:-217px -43px;
+}
+#contact .contact-info .socialLinks a.vk {
+    background-position:-144px 13px;
+}
+
+
+/* ***************************************** */
+/*                 9. Footer                 */
+/* ***************************************** */
+	
+footer {
+    padding-top:25px;
+    padding-bottom:25px;
+    background:url("../img/background/background-1.png");
+}
+footer .copyright p {
+    text-align:center;
+    color:#eaeaea;
+    font-size:14px;
+    line-height:25px;
+    margin:0;
+}
+
+/* And they lived happily until there came to them the One who destroys all happiness. */
